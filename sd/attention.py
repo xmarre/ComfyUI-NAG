@@ -23,6 +23,8 @@ class NAGCrossAttention(CrossAttention):
             context=None,
             value=None,
             mask=None,
+            transformer_options=None,
+            **kwargs,
     ):
         origin_bsz = len(context) - len(x)
         assert origin_bsz != 0
